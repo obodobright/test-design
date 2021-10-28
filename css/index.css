@@ -1,0 +1,1026 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ContainerBody {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.harmburger {
+    display: none;
+}
+
+.navbars {
+    width: 100%;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: 50px;
+    background: transparent;
+    margin: 0 20px;
+}
+
+ul.nav-item {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 5vw;
+}
+
+li.nav-link {
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 18px; */
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.nav-link.bttn {
+    border: 1px solid #ff6634;
+    padding: 7px 25px;
+    transition: all 350ms;
+    border-radius: 2px;
+}
+
+.nav-link.bttn:hover {
+    cursor: pointer;
+    background: #dd592d;
+    color: white;
+}
+
+
+/* Hero  */
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    height: 100%;
+    background: #ffebff;
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.heroContent {
+    width: 400px;
+    background: transparent;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.contentTitle {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.heroContent p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contentDesc {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.inputContainer {
+    width: 450px;
+    height: 50px;
+    background: white;
+    border-radius: 5px;
+}
+
+.inputContainer input {
+    width: 340px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding-left: 5px;
+}
+
+.inputContainer button {
+    height: 45px;
+    width: 99px;
+    border: 0;
+    outline: 0;
+    margin: 0 3px;
+    border-radius: 3px;
+    background: #ff6634;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.imageHolder {
+    width: 700px;
+    height: 70vh;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.testimonialCard {
+    width: 230px;
+    height: 110px;
+    background: white;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    border-radius: 8px;
+    padding: 10px 8px;
+}
+
+.flexImgcard {
+    display: flex;
+    align-items: center;
+}
+
+.employerPreview {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 1;
+    position: absolute;
+    top: 150px;
+    left: 73%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employerPreview span {
+    font-family: Montserrat;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.employerPreview div {
+    /* font-family: arial black;
+   
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0; */
+    font-family: Montserrat;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff6634;
+}
+
+.employerProgress {
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 1;
+    padding: 4px;
+    position: absolute;
+    top: 100px;
+    left: 29%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 6px;
+}
+
+.employerProgress div {
+    background: rgb(240, 231, 231);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #ff6634;
+    border-right-color: rgb(240, 231, 231);
+    padding: 3px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.username {
+    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.userOccupation {
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #bfbfbf;
+}
+
+.quote {
+    width: 300px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 4.5em;
+    color: #8d8d8d;
+    position: relative;
+}
+
+.fa-quote-left {
+    font-size: 20px;
+    position: absolute;
+    color: #ff6634;
+    left: -20px;
+}
+
+.fa-quote-right {
+    font-size: 20px;
+    position: absolute;
+    color: #ff6634;
+    top: 40px;
+    left: 95%;
+}
+
+
+/* feaurespreview and testimonials */
+
+.featureContainer {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: transparent;
+    padding: 4em 0;
+}
+
+.featureWrapper {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperTitle {
+    font-family: Montserrat;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* margin-top: 3em; */
+}
+
+.wrapperDesc {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #8d8d8d;
+}
+
+.cardDesc {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 200px;
+}
+
+.category {
+    height: 19px;
+    width: 90px;
+    left: 606px;
+    top: 1116px;
+    border-radius: 6px;
+    background-color: #ff66340d;
+    color: #ff6634;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.organization {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card {
+    box-shadow: 0px 3px 17px 0px rgba(181, 172, 172, 0.75);
+    -webkit-box-shadow: 0px 3px 17px 0px rgba(181, 172, 172, 0.75);
+    -moz-box-shadow: 0px 3px 17px 0px rgba(181, 172, 172, 0.75);
+    border: 0;
+    margin: 20px 30px;
+    transform: scale(1);
+    transition: all 350ms;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.actives {
+    width: 8px;
+    height: 8px;
+    background: #8a8a8a;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border: 1px solid #8a8a8a;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.subscribeContainer {
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    background: whitesmoke;
+}
+
+.subscribeWrapper {
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subscribeInput {
+    visibility: visible;
+    display: flex;
+}
+
+.subTitle {
+    font-family: Montserrat;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.subDesc {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 450px;
+    padding-right: 10px;
+    color: #8d8d8d;
+}
+
+.form-control {
+    width: 400px;
+    border: 0;
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: Montserrat;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #ff6634;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(218, 88, 28, 0.25);
+}
+
+.btn {
+    background: #ff6634;
+    color: white;
+    transition: all 350ms;
+}
+
+.btn:hover {
+    background: #dd592d;
+}
+
+.clientContainer {
+    width: 100%;
+    min-height: 10vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.clientImg {
+    width: 10%;
+}
+
+.advertContainer {
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    background: transparent;
+    padding: 50px 0;
+}
+
+.advertWrapper {
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.advertCard {
+    width: 370px;
+    height: 300px;
+    background: #fbfbfb;
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #c2c2c2;
+    padding: 0 20px;
+    margin: 10px 30px;
+    transition: all 350ms;
+    transform: scale(1);
+}
+
+.advertCard:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.signup {
+    width: 80%;
+    height: 150px;
+    background: #ffebff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5em;
+    flex-wrap: wrap;
+}
+
+.signupText {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 300px;
+    padding: 5px;
+}
+
+
+/* footer */
+
+.footerContainer {
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    background: #1f2131;
+    margin-top: 20vh;
+}
+
+.footerWrapper {
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transition: all 350ms;
+    transform: scale(0.9);
+}
+
+.icon:hover {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.footerCOntent h4 {
+    width: 300px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding: 10px;
+}
+
+.footerCOntent p {
+    flex: 1;
+}
+
+.footerCOntent {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.otherFatures h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+}
+
+.copyrights {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 5em;
+}
+
+.otherFatures .nav-link {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+}
+
+.subscribeWrapperMobile {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        margin: 20px 0;
+    }
+    .inputContainer {
+        width: 100px;
+        height: 50px;
+        background: white;
+        border-radius: 5px;
+        margin: 0;
+        display: none;
+    }
+    .quote p {
+        width: 200px;
+    }
+    .fa-quote-right {
+        font-size: 20px;
+        position: absolute;
+        color: #ff6634;
+        top: 50px;
+        left: 60%;
+    }
+    .inputContainer input {
+        width: 70px;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: 0;
+        padding-left: 5px;
+    }
+    .inputContainer .btn {
+        height: 45px;
+        width: 30px;
+        border: 0;
+        outline: 0;
+        margin: 0 3px;
+        border-radius: 3px;
+        background: #ff6634;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        display: none;
+    }
+    .heroContent {
+        width: 200px;
+        background: transparent;
+        padding: 10px;
+        margin-top: 30px;
+        display: none;
+    }
+    .subTitle {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .subDesc {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 250px;
+        padding-right: 10px;
+        color: #8d8d8d;
+    }
+    .form-control {
+        width: 200px;
+        border: 0;
+        padding-left: 5px;
+        font-size: 15px;
+        font-family: Montserrat;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .subscribeInput {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribeInput .btn {
+        width: 100px;
+        margin: 10px 0;
+    }
+    .advertCard {
+        width: 300px;
+        height: 260px;
+        background: #fbfbfb;
+        border: 1px solid #d6d6d6;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #c2c2c2;
+        padding: 0 20px;
+        margin: 10px 30px;
+        transition: all 350ms;
+        transform: scale(1);
+    }
+    .subscribeWrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ul.nav-item {
+        display: none;
+    }
+    .harmburger {
+        display: block;
+        font-size: 30px;
+        margin: 0 20px;
+    }
+    .inputContainer {
+        width: 350px;
+        height: 50px;
+        background: white;
+        border-radius: 5px;
+    }
+    .inputContainer input {
+        width: 250px;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: 0;
+        padding-left: 5px;
+    }
+    .inputContainer button {
+        height: 45px;
+        width: 88px;
+        border: 0;
+        outline: 0;
+        margin: 0 3px;
+        border-radius: 3px;
+        background: #ff6634;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .heroContent {
+        width: 300px;
+        background: transparent;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .subTitle {
+        font-family: Montserrat;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .subDesc {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 300px;
+        padding-right: 10px;
+        color: #8d8d8d;
+    }
+    .form-control {
+        width: 300px;
+        border: 0;
+        padding-left: 5px;
+        font-size: 15px;
+        font-family: Montserrat;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .subscribeInput {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribeInput .btn {
+        width: 100px;
+        margin: 10px 0;
+    }
+    .advertCard {
+        width: 350px;
+        height: 270px;
+        background: #fbfbfb;
+        border: 1px solid #d6d6d6;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #c2c2c2;
+        padding: 0 20px;
+        margin: 10px 30px;
+        transition: all 350ms;
+        transform: scale(1);
+    }
+    .subscribeWrapperMobile {
+        width: 100%;
+        min-height: 50vh;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .subscribeWrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .inputContainer {
+        width: 300px;
+        height: 50px;
+        background: white;
+        border-radius: 5px;
+    }
+    .inputContainer input {
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: 0;
+        padding-left: 5px;
+    }
+    .inputContainer button {
+        height: 45px;
+        width: 78px;
+        border: 0;
+        outline: 0;
+        margin: 0 3px;
+        border-radius: 3px;
+        background: #ff6634;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .subTitle {
+        font-family: Montserrat;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .subDesc {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 300px;
+        padding-right: 10px;
+        color: #8d8d8d;
+    }
+    .form-control {
+        width: 200px;
+        border: 0;
+        padding-left: 5px;
+        font-size: 15px;
+        font-family: Montserrat;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .subscribeInput {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribeInput .btn {
+        width: 100px;
+        margin: 10px 0;
+    }
+    .advertCard {
+        width: 300px;
+        height: 260px;
+        background: #fbfbfb;
+        border: 1px solid #d6d6d6;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #c2c2c2;
+        padding: 0 20px;
+        margin: 10px 30px;
+        transition: all 350ms;
+        transform: scale(1);
+    }
+    .subscribeWrapper {
+        display: none;
+    }
+}
