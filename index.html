@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bablemo Designs</title>
+    <title>BlabEmo Designs</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/proper.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -23,15 +24,17 @@
         <div class="wrapperBody">
             <!-- first component headernav -->
             <nav class="navbars">
-                <div class="harmburger">=</div>
+                
                 <div class="logo"></div>
+                <div class="navmobile" id="navmobile">
                 <ul class="nav-item">
                     <li class="nav-link">Timeline</li>
                     <li class="nav-link">Peer Review</li>
                     <li class="nav-link">Login</li>
                     <li class="nav-link bttn ">Signup</li>
                 </ul>
-
+                </div>
+                <div class="harmburger" id="toggler">=</div>
             </nav>
 
             <!-- hero component -->
@@ -52,14 +55,13 @@
                         </p>
                         <div class="quote">
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                            <p>
-                                A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.
+                            <p id="quote" style="transition: all 250ms;">
                             </p>
                             <i class="fa fa-quote-right" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="imageHolder">
-                        <img src="asset/heroimg.png" alt=" " class="heroImg" id="heroImg" />
+                        <img src="asset/heroimg.png" class="heroImg" name="heroImg" >
                         <div class="testimonialCard">
                             <div class="rating">
                                 <img src="asset/Vector.png" alt="" />
@@ -334,7 +336,7 @@
         <!-- Advertisement Container -->
         <div class="advertContainer">
           <div class="advertWrapper">
-              <div class="d-flex justify-content-around flex-wrap" >
+              <div class="d-flex justify-content-around flex-wrap mobileScreen" >
             <div class="advertCard">Advertisement</div>
             <div class="advertCard">Advertisement</div>
             <div class="advertCard">Advertisement</div>
@@ -358,7 +360,7 @@ start reveiwing business. </div>
                                 </div>
                                 <h6 class="copyrights">© Copyright 2021 </h6>
                             </div>
-                            <div class="otherFatures d-flex flex-wrap">
+                            <div class="otherFatures d-flex flex-wrap justify-content-center">
                               <div class="text-left mx-4">
                                 <h4>Company</h4>
                                 <ul class="navItem">
@@ -377,7 +379,7 @@ start reveiwing business. </div>
                                   <li class="nav-link">Sign In</li>
                                 </ul>
                               </div>
-                              <div class="text-left">
+                              <div class="text-left mobileContact">
                                 <h4>Contact Us</h4>
                                 <ul class="navItem w-50">
                                   <li class="nav-link">inquiry@thaapp.com</li>
@@ -394,8 +396,9 @@ start reveiwing business. </div>
             </div>
         </div>
     </div>
-</body>
+    <script src="index.js"></script>
 
+</body>
 </html>
 <!--  navbar-expand-md bg-white navbar-dark -->
 <!--  navbar-expand-md bg-white navbar-dark -->

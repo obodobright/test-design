@@ -32,7 +32,13 @@
 
 ul.nav-item {
     display: flex;
-    align-items: center;
+    /* align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 5vw; */
+}
+
+.navmobile {
     font-weight: bold;
     margin-top: 10px;
     margin-right: 5vw;
@@ -308,6 +314,29 @@ li.nav-link {
     color: #ff6634;
     top: 40px;
     left: 95%;
+}
+
+#quote {
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.heroImg {
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(10px);
+    }
+    20% {
+        transform: translateX(20px);
+    }
 }
 
 
@@ -649,6 +678,7 @@ li.nav-link {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 .otherFatures h4 {
@@ -675,7 +705,7 @@ li.nav-link {
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .otherFatures .nav-link {
@@ -693,132 +723,63 @@ li.nav-link {
     display: none;
 }
 
-@media screen and (max-width: 320px) {
-    .card {
-        margin: 20px 0;
-    }
-    .inputContainer {
-        width: 100px;
-        height: 50px;
-        background: white;
-        border-radius: 5px;
-        margin: 0;
-        display: none;
-    }
-    .quote p {
-        width: 200px;
-    }
-    .fa-quote-right {
-        font-size: 20px;
-        position: absolute;
-        color: #ff6634;
-        top: 50px;
-        left: 60%;
-    }
-    .inputContainer input {
-        width: 70px;
-        height: 50px;
-        border-radius: 5px;
-        outline: none;
-        border: 0;
-        padding-left: 5px;
-    }
-    .inputContainer .btn {
-        height: 45px;
-        width: 30px;
-        border: 0;
-        outline: 0;
-        margin: 0 3px;
-        border-radius: 3px;
-        background: #ff6634;
-        color: white;
-        font-weight: 600;
-        cursor: pointer;
-        display: none;
-    }
-    .heroContent {
-        width: 200px;
-        background: transparent;
-        padding: 10px;
-        margin-top: 30px;
-        display: none;
-    }
-    .subTitle {
+@media screen and (max-width: 768px) {
+    .signupText {
         font-family: Montserrat;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 35px;
-        letter-spacing: 0em;
-        text-align: center;
-    }
-    .subDesc {
-        font-family: Montserrat;
-        font-size: 14px;
+        font-size: 23px;
         font-style: normal;
         font-weight: 400;
-        line-height: 21px;
+        line-height: 30px;
         letter-spacing: 0em;
         text-align: center;
-        width: 250px;
-        padding-right: 10px;
-        color: #8d8d8d;
+        width: 300px;
+        padding: 5px;
     }
-    .form-control {
-        width: 200px;
-        border: 0;
-        padding-left: 5px;
-        font-size: 15px;
-        font-family: Montserrat;
-        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    .logo {
+        display: none;
     }
-    .subscribeInput {
-        visibility: visible;
+    ul.nav-item {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: left;
     }
-    .subscribeInput .btn {
-        width: 100px;
-        margin: 10px 0;
+    .navmobile {
+        display: none;
+        background: white;
+        color: black;
+        width: 100%;
+        margin: auto;
+        /* height: 200px; */
+        position: relative;
+        z-index: 1;
+        padding: 10px 0;
+        transition: all 350ms;
     }
-    .advertCard {
-        width: 300px;
-        height: 260px;
-        background: #fbfbfb;
-        border: 1px solid #d6d6d6;
-        border-radius: 7px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-transform: uppercase;
+    li.nav-link {
+        margin: 0 5px;
+        cursor: pointer;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 15px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 24px;
+        font-weight: 400;
+        /* line-height: 18px; */
         letter-spacing: 0em;
         text-align: left;
-        color: #c2c2c2;
-        padding: 0 20px;
-        margin: 10px 30px;
+    }
+    .nav-link.bttn {
+        border: 1px solid #ff6634;
+        width: 100px;
         transition: all 350ms;
-        transform: scale(1);
-    }
-    .subscribeWrapper {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    ul.nav-item {
-        display: none;
+        border-radius: 2px;
     }
     .harmburger {
         display: block;
         font-size: 30px;
         margin: 0 20px;
+        cursor: pointer;
+    }
+    .show {
+        display: block;
     }
     .inputContainer {
         width: 350px;
@@ -928,6 +889,26 @@ li.nav-link {
     .subscribeWrapper {
         display: none;
     }
+    .footerCOntent h4 {
+        text-align: center;
+    }
+    .iconContainer {
+        display: flex;
+        justify-content: center;
+    }
+    .copyrights {
+        text-align: center;
+    }
+    .mobileContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerCOntent {
+        margin-top: 2em;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1022,5 +1003,239 @@ li.nav-link {
     }
     .subscribeWrapper {
         display: none;
+    }
+    .footerCOntent h4 {
+        width: 300px;
+        text-align: center;
+    }
+    .iconContainer {
+        display: flex;
+        justify-content: center;
+    }
+    .copyrights {
+        text-align: center;
+    }
+    /* .otherFatures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .mobileContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerCOntent {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .signupText {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 300px;
+        padding: 5px;
+    }
+    .advertCard {
+        width: 350px;
+        transition: all 350ms;
+        transform: scale(1);
+    }
+    .advertCard:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+    .mobileScreen {
+        justify-content: center;
+        width: 70%;
+    }
+    .card {
+        margin: 20px 0;
+    }
+    .inputContainer {
+        width: 250px;
+        height: 50px;
+        background: white;
+        border-radius: 5px;
+        margin: 0 0;
+        /* display: none; */
+    }
+    .quote {
+        width: 200px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 4.5em;
+        color: #8d8d8d;
+        position: relative;
+    }
+    .quote p {
+        width: 200px;
+    }
+    .fa-quote-right {
+        font-size: 20px;
+        position: absolute;
+        color: #ff6634;
+        top: 35px;
+        right: 15%;
+    }
+    .fa-quote-left {
+        font-size: 20px;
+        position: absolute;
+        color: #ff6634;
+        left: -20px;
+    }
+    .inputContainer input {
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: 0;
+        padding-left: 5px;
+        /* display: none; */
+    }
+    .inputContainer .btn {
+        height: 45px;
+        /* width: 30px; */
+        border: 0;
+        outline: 0;
+        /* margin: 0 3px; */
+        border-radius: 3px;
+        background: #ff6634;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+        /* display: none; */
+    }
+    .heroContent {
+        width: 300px;
+        background: transparent;
+        padding: 10px;
+        margin-top: 30px;
+        /* display: none; */
+    }
+    .subTitle {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+        /* display: none; */
+    }
+    .subDesc {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 250px;
+        padding-right: 10px;
+        color: #8d8d8d;
+    }
+    .form-control {
+        width: 200px;
+        border: 0;
+        padding-left: 5px;
+        font-size: 15px;
+        font-family: Montserrat;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .subscribeInput {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribeInput .btn {
+        width: 100px;
+        margin: 10px 0;
+    }
+    .advertCard {
+        width: 300px;
+        height: 260px;
+        background: #fbfbfb;
+        border: 1px solid #d6d6d6;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #c2c2c2;
+        padding: 0 20px;
+        margin: 10px 30px;
+        transition: all 350ms;
+        transform: scale(1);
+    }
+    .subscribeWrapper {
+        display: none;
+    }
+    .contentTitle {
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .heroContent p {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .footerCOntent {
+        margin-top: 2em;
+    }
+    .footerCOntent h4 {
+        width: 300px;
+        text-align: center;
+    }
+    .iconContainer {
+        display: flex;
+        justify-content: center;
+    }
+    .copyrights {
+        text-align: center;
+    }
+    /* .otherFatures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .mobileContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 }
